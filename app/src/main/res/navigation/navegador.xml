@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navegador"
+    app:startDestination="@id/primerFragment">
+
+    <fragment
+        android:id="@+id/primerFragment"
+        android:name="es.iesoretania.kotlinejemplonavigationcomponentobjeto.fragmentos.PrimerFragment"
+        android:label="PrimerFragment" >
+        <action
+            android:id="@+id/action_primerFragment_to_segundoFragment"
+            app:destination="@id/segundoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/segundoFragment"
+        android:name="es.iesoretania.kotlinejemplonavigationcomponentobjeto.fragmentos.SegundoFragment"
+        android:label="SegundoFragment" >
+        <argument
+            android:name="Libro"
+            app:argType="es.iesoretania.kotlinejemplonavigationcomponentobjeto.Libro" />
+        <action
+            android:id="@+id/action_segundoFragment_to_primerFragment"
+            app:destination="@id/primerFragment" />
+    </fragment>
+</navigation>
