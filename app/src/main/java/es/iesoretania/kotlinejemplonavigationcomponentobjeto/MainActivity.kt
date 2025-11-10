@@ -8,9 +8,9 @@ import androidx.core.view.WindowInsetsCompat
 import es.iesoretania.kotlinejemplonavigationcomponentobjeto.databinding.ActivityMainBinding
 
 /**
- * Esta es el MainActivity, el punto de entrada de nuestra aplicación.
+ * Este es el MainActivity, el punto de entrada de nuestra aplicación.
  *
- * ¿Qué hace esta Activity?
+ * ¿Qué hace este Activity?
  * - Es el contenedor principal que aloja nuestros fragments
  * - Configura el ViewBinding para acceder a las vistas de forma segura
  * - Gestiona los insets (márgenes) para que el contenido no se solape con las barras del sistema
